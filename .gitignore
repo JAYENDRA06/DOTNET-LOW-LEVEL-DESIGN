@@ -1,0 +1,59 @@
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code settings
+.vscode/
+*.code-workspace
+
+# NuGet packages
+*.nupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Rider settings
+.idea/
+*.sln.iml
+
+# DotCover
+*.dotCover
+
+# Resharper
+*.DotSettings
+
+# Test results
+TestResults/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Others
+*.vspscc
+*.vssscc
+_ReSharper*/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+
+# Auto-generated files
+*.g.cs
+*.g.i.cs
+
+# Publish output
+publish/
+
+# Entity Framework
+migrations/
