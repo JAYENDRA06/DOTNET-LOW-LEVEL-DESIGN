@@ -1,5 +1,7 @@
 namespace Command;
 
+// THEORY: commands are encapsulated as objects, allowing parameterization of clients with queues, requests, and operations.
+
 public interface Command {
     void execute();
 }

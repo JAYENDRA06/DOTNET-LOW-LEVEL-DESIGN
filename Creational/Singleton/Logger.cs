@@ -1,5 +1,7 @@
 namespace Singleton;
 
+// THEORY: Used when goal is to create one and only one instance throughout the application lifecycle.
+
 public sealed class Logger
 {
     public static volatile Logger? _instance = null;

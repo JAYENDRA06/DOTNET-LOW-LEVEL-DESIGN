@@ -1,5 +1,7 @@
 namespace Strategy;
 
+// THEORY: allows to define a family of algorithms/behaviours and choose one during runtime
+
 public interface IPaymentStrategy {
     void ProcessPayment(decimal amount);
 }

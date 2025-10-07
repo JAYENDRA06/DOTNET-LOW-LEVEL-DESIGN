@@ -1,5 +1,7 @@
 namespace Template;
 
+// THEORY: defines a blueprint for an algorithm while letting subclasses fill in the details.
+
 abstract class Beverage {
     public void PrepareRecipe() {
         BoilWater();

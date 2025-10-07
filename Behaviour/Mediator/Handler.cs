@@ -2,7 +2,7 @@ namespace Mediator;
 
 public class Handler {
     public static void Handle() {
-        AuctionMeditator auctionHouse = new AuctionHouse();
+        AuctionMediator auctionHouse = new AuctionHouse();
 
         Bidder bidder1 = new Bidder("Alice", auctionHouse);
         Bidder bidder2 = new Bidder("Bob", auctionHouse);

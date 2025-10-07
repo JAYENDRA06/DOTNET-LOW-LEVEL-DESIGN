@@ -1,5 +1,7 @@
 namespace State;
 
+// THEORY: allows an object to alter its behavior when its internal state changes. Encapsulates state-specific behavior into separate classes.
+
 public interface TrafficLightState {
     void Next(TrafficLightContext context);
     string GetColor();

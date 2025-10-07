@@ -1,5 +1,7 @@
 namespace Iterator;
 
+// THEORY: allows easy traversal of a collection of objects without exposing the underlying representation.
+
 public interface IIterator {
     bool HasNext();
     string Next();

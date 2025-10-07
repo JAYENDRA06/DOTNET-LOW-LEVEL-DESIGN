@@ -1,5 +1,7 @@
 namespace ChainOfResponsibility;
 
+// THEORY: a request is passed along a chain of handlers. Each handler decides either to process the request or to pass it to the next handler in the chain.
+
 public abstract class Approver {
     protected Approver? nextApprover;
 

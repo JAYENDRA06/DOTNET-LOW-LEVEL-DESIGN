@@ -1,5 +1,7 @@
 namespace Decorator;
 
+// THEORY: dynamically adds behavior to objects without altering their structure.
+
 public interface ICoffee {
     string GetDescription();
     double GetCost();

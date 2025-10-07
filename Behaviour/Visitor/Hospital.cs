@@ -1,5 +1,7 @@
 namespace Visitor;
 
+// THEORY: separates operations from the objects they act upon.
+
 interface Patient {
     void Accept(Visitor visitor);
 }

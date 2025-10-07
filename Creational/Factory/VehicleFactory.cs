@@ -1,5 +1,7 @@
 namespace Factory;
 
+// THEORY: factory pattern allows object creation in a centralized manner, promoting loose coupling and scalability.
+
 public interface Vehicle {
     void start();
     void stop();

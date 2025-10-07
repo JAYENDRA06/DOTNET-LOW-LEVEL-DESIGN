@@ -1,11 +1,13 @@
 namespace Mediator;
 
-interface AuctionMeditator {
+// THEORY: simplifies communication between multiple objects by centralizing interactions through a mediator object, promoting loose coupling.
+
+interface AuctionMediator {
     void RegisterBidder(Bidder bidder);
     void PlaceBid(Bidder bidder, decimal amount);
 }
 
-class AuctionHouse : AuctionMeditator {
+class AuctionHouse : AuctionMediator {
     private List<Bidder> bidders = new List<Bidder>();
 
     public void RegisterBidder(Bidder bidder) {
@@ -20,10 +22,12 @@ class AuctionHouse : AuctionMeditator {
     }
 }
 
+// similarly we can have other auction mediators like RealEstateAuction, CarAuction etc.
+
 class Bidder {
     private string name;
-    private AuctionMeditator mediator;
-    public Bidder(string name, AuctionMeditator mediator) {
+    private AuctionMediator mediator;
+    public Bidder(string name, AuctionMediator mediator) {
         this.name = name;
         this.mediator = mediator;
     }

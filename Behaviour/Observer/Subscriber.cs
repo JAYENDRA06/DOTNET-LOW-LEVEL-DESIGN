@@ -1,5 +1,7 @@
 namespace Observer;
 
+// THEORY: allows one object(subject) to notify other dependent objects(subscribers) about state changes, promoting loose coupling.
+
 public interface Subscriber {
     void Update(string message);
 }

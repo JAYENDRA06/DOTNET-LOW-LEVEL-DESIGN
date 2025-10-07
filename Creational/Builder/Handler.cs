@@ -2,7 +2,7 @@ namespace Builder;
 
 public class Handler {
     public static void Handle() {
-        Carr myCar = new Carr.CarBuilder()
+        Car myCar = new Car.CarBuilder()
             .SetColor("Red")
             .SetEngineType("V8")
             .SetSeats(4)

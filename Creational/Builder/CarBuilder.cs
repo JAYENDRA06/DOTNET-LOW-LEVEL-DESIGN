@@ -1,11 +1,14 @@
 namespace Builder;
 
-public class Carr {
+// THEORY: helps constructing complex objects step by step, providing better control over the construction process.
+// useful in cases where huge combinations of constructor overloads would be needed.
+
+public class Car {
     public string Color { get; private set; }
     public string EngineType { get; private set; }
     public int Seats { get; private set; }
 
-    public Carr(CarBuilder builder) {
+    public Car(CarBuilder builder) {
         Color = builder.Color;
         EngineType = builder.EngineType;
         Seats = builder.Seats;
@@ -31,8 +34,8 @@ public class Carr {
             return this;
         }
 
-        public Carr Build() {
-            return new Carr(this);
+        public Car Build() {
+            return new Car(this);
         }
     }
 }

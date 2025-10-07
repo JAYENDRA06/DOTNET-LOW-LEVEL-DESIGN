@@ -1,5 +1,7 @@
 namespace Adapter;
 
+// THEORY: acts as a bridge between two incompatible interfaces.
+
 public class AirConditioner {
     public void ConnectViaRemote() {
         Console.WriteLine("Air Conditioner connected via remote control.");

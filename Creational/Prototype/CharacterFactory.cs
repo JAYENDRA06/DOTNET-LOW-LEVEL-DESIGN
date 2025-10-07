@@ -1,5 +1,7 @@
 namespace Prototype;
 
+// THEORY: allows creation of new objects by cloning existing prototypes
+
 public class Character: ICloneable {
     public string Name { get; set; }
     public int Level { get; set; }

@@ -20,4 +20,8 @@ Visitor.Handler.Handle();
 // #region Structural Patterns
 Adapter.Handler.Handle();
 Decorator.Handler.Handle();
+Bridge.Handler.Handle();
+Composite.Handler.Handle();
+Proxy.Handler.Handle();
+Facade.Handler.Handle();
 // #endregion
